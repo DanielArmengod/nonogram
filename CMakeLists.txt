@@ -28,7 +28,9 @@ file(GLOB_RECURSE HEADERS
 )
 
 # Create executable
-add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS}
+        src/readJson.cpp
+        src/readJson.h)
 
 # Include directories
 target_include_directories(${PROJECT_NAME} 
